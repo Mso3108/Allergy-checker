@@ -1,26 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 18px; /* Increase the default font size */
-}
-
 .container {
-    max-width: 600px; /* Increase the container width */
-    margin: 50px auto;
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
 }
 
 input[type="text"] {
-    width: 80%; /* Increase the input field width */
-    padding: 15px; /* Increase padding for better visibility */
-    margin-bottom: 20px; /* Increase margin for better spacing */
-    font-size: 18px; /* Increase font size */
+    padding: 8px;
+    width: 60%;
+    margin: 10px;
 }
 
 button {
-    padding: 15px 30px; /* Increase padding for the button */
-    font-size: 18px; /* Increase font size */
+    padding: 8px 16px;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
     cursor: pointer;
 }
