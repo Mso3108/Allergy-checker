@@ -3,6 +3,7 @@ function checkAllergy() {
     fetch('Allergies.csv')
     .then(response => response.text())
     .then(text => {
+        console.log(text); // Log the CSV data
         var rows = text.split('\n').map(row => row.split(','));
         var allergic = false;
         for (var i = 0; i < rows.length; i++) {
