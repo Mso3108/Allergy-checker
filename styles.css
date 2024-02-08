@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Increase the default font size */
+}
+
+.container {
+    max-width: 600px; /* Increase the container width */
+    margin: 50px auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%; /* Increase the input field width */
+    padding: 15px; /* Increase padding for better visibility */
+    margin-bottom: 20px; /* Increase margin for better spacing */
+    font-size: 18px; /* Increase font size */
+}
+
+button {
+    padding: 15px 30px; /* Increase padding for the button */
+    font-size: 18px; /* Increase font size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
