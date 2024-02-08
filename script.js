@@ -1,23 +1,23 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-}
+document.getElementById('allergyForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const foodInput = document.getElementById('foodInput').value;
 
-input[type="text"] {
-    padding: 8px;
-    width: 60%;
-    margin: 10px;
-}
-
-button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+    fetch('check_allergy.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ food: foodInput })
+    })
+    .then(response => response.json())
+    .then(data => {
+        const resultDiv = document.getElementById('result');
+        if (data.error) {
+            resultDiv.innerHTML = `<p>${data.error}</p>`;
+        } else {
+            resultDiv.innerHTML = `<p>${data.message}</p>`;
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
