@@ -25,7 +25,7 @@ function checkAllergy() {
             if (found) {
                 resultElement.textContent = "Yes, this food may cause an allergic reaction.";
             } else {
-                resultElement.textContent = "No, this food is not listed as an allergen.";
+                resultElement.textContent = "This food should be okay, but please check for any allergens in the ingredients.";
             }
         }
     };
