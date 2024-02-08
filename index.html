@@ -9,14 +9,10 @@
 <body>
     <div class="container">
         <h1>Allergy Checker</h1>
-        <form id="allergyForm">
-            <label for="foodInput">Enter a food:</label>
-            <input type="text" id="foodInput" name="foodInput">
-            <button type="submit">Check</button>
-        </form>
+        <input type="text" id="foodInput" placeholder="Enter a food item">
+        <button onclick="checkAllergy()">Check</button>
         <div id="result"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
